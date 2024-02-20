@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.83f8d106.css",
-    "main.js": "/static/js/main.f6f512d1.js",
-    "static/media/test.mp4": "/static/media/test.806465d93a48dd5aa565.mp4",
-    "index.html": "/index.html",
-    "main.83f8d106.css.map": "/static/css/main.83f8d106.css.map",
-    "main.f6f512d1.js.map": "/static/js/main.f6f512d1.js.map"
+    "main.css": "/totem-game-dev/static/css/main.83f8d106.css",
+    "main.js": "/totem-game-dev/static/js/main.3d5e03c7.js",
+    "static/media/test.mp4": "/totem-game-dev/static/media/test.806465d93a48dd5aa565.mp4",
+    "index.html": "/totem-game-dev/index.html",
+    "main.83f8d106.css.map": "/totem-game-dev/static/css/main.83f8d106.css.map",
+    "main.3d5e03c7.js.map": "/totem-game-dev/static/js/main.3d5e03c7.js.map"
   },
   "entrypoints": [
     "static/css/main.83f8d106.css",
-    "static/js/main.f6f512d1.js"
+    "static/js/main.3d5e03c7.js"
   ]
 }

@@ -2,6 +2,7 @@
   "name": "totem-game-dev",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ivanchernykh.github.io/totem-game-dev/",
   "dependencies": {
     "@emotion/react": "true11.11.3",
     "@emotion/styled": "true11.11.0",
