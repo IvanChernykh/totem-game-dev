@@ -1,26 +1,56 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { Box, Button } from '@mui/material';
+import Video from './assets/test.mp4';
 
-function App() {
+const App: React.FC = () => {
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleClick = () => {
+    setIsClicked(true);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div>
+      {isClicked ? (
+        <Box
+          sx={{
+            width: '100%',
+            height: '100vh',
+            overflow: 'hidden',
+            background: 'black',
+          }}
         >
-          Learn React
-        </a>
-      </header>
+          <video autoPlay width="100%" height="100%">
+            <source src={Video} type="video/mp4" />
+          </video>
+        </Box>
+      ) : (
+        <Box
+          sx={{
+            height: '100vh',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            flexDirection: 'column',
+          }}
+        >
+          <Button
+            variant="contained"
+            sx={{ mb: 2, width: '200px' }}
+            onClick={handleClick}
+          >
+            Login
+          </Button>
+          <Button
+            variant="contained"
+            sx={{ width: '200px' }}
+            onClick={handleClick}
+          >
+            Sign up
+          </Button>
+        </Box>
+      )}
     </div>
   );
-}
+};
 
 export default App;
