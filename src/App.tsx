@@ -44,8 +44,9 @@ const App: React.FC = () => {
             variant="contained"
             sx={{ width: '200px' }}
             onClick={handleClick}
+            disabled
           >
-            Sign up
+            Sign up (in dev)
           </Button>
         </Box>
       )}
